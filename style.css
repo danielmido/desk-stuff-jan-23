@@ -1,0 +1,150 @@
+* {
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.judul {
+  text-align: center;
+  font-size: 2.8em;
+}
+
+.judul h1 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.up-1 {
+  margin-top: -5px;
+}
+
+/* Atas */
+.atas {
+  background-color: #ccc;
+  margin-top: -5px;
+  padding-top: 60px;
+  padding-bottom: 75px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.lampu,
+.stationary,
+.botol {
+  display: flex;
+  justify-content: center;
+}
+
+.lampu img {
+  width: 55vw;
+  height: auto;
+  background-color: #fff;
+  padding: 20px 8px 60px;
+  border: 5px solid #fff;
+  transform: rotate(-8deg);
+
+  z-index: 3;
+
+  filter: drop-shadow(12px 12px 7px #777);
+}
+
+.stationary img {
+  width: 55vw;
+  height: auto;
+  background-color: #fff;
+  padding: 20px 8px 60px;
+  border: 5px solid #fff;
+  transform: rotate(13deg);
+
+  z-index: 2;
+
+  filter: drop-shadow(12px 12px 7px #777);
+}
+
+.botol img {
+  width: 55vw;
+  height: auto;
+  background-color: #fff;
+  padding: 20px 8px 60px;
+  border: 5px solid #fff;
+  transform: rotate(-6deg);
+
+  z-index: 1;
+
+  filter: drop-shadow(12px 12px 7px #777);
+}
+
+/* Sorokan */
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: #ffe7ed;
+}
+
+.container img {
+  width: 65vw;
+
+  align-self: center;
+  margin-top: 25px;
+  border: 7px solid #d9a;
+}
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 768px) {
+  .judul {
+    font-size: 4.1em;
+  }
+
+  .atas {
+    flex-direction: row;
+  }
+
+  .lampu,
+  .stationary,
+  .botol {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .lampu img,
+  .stationary img,
+  .botol img {
+    width: 60%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px 8px 60px;
+    border: 5px solid #fff;
+    transform: rotate(-8deg);
+  }
+
+  /*
+  
+  <==========>
+  Break
+  <==========>
+  
+  */
+
+  .container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .container img {
+    width: 24vw;
+
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+    border: 7px solid #d9a;
+  }
+}
